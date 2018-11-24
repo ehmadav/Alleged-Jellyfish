@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+    <title>Spring Framework Guru</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>Hello, Alleged Jellyfish!</h1>
+<button>Thing</button>
+<ul th:each="fruitName : ${fruits}">
+    <li th:text="${fruitName}"> </li>
+</ul>
+
+<h1>Arduino Status</h1>
+    <div th:text="${arduino}" />
+</body>
+</html>
